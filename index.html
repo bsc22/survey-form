@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Let us know your favorite Chelsea player and preferred formation">
+      <meta name="keywords" content="Chelsea, Survey, Players, Formations">  
+      <meta name="author" content="Bally Chandi">  
+      <title>Chelsea Survey Form</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+
+  <body>
+      <div class="form-container">
+         <header class="header">
+            <h1 id="title" class="text-center"> Chelsea Survey Form</h1>
+            <p id="description" class="text-center">Choose your favourite player and preferred team formation</p>
+        </header>
+
+        <form action="" method="" id="survey-form">    
+
+               <div class="name-email-age"> 
+            <label for="name" id="name">Name</label>
+            <input 
+               id="name"
+               type="text" 
+	            placeholder="Enter Your Name" 
+               required>
+
+            <label for="email" id="email">Email</label>
+            <input 
+               id="email"
+               type="email" 
+               placeholder="Enter Your Email" 
+               required> 
+               
+
+               <label for="number" id="number">Enter Your Age</label>
+               <input 
+                  id="number"
+                  type="number" 
+                  min="13"
+                  max="99"
+                  placeholder="Age">
+               </div>	
+
+               <p>To Which Gender identity do you most identify?</p>
+   
+               <div class="form-gender">     
+   
+                  <label for="female">
+                  <input
+                     id="female"
+                     value="female"
+                     type="radio"
+                     name="user-gender">
+                     Female
+                  </label>
+   
+                  <label for="male">
+                  <input
+                     id="male"
+                     value="male"
+                     type="radio"
+                     name="user-gender">
+                     Male
+                  </label>
+   
+                  <label for="tg-female">
+                  <input
+                     id="tg-female"
+                     value="tg-female"
+                     type="radio"
+                     name="user-gender">
+                     Transgender Female
+                  </label>
+   
+                  <label for="tg-male">
+                  <input
+                     id="tg-male"
+                     value="tg-male"
+                     type="radio"
+                     name="user-gender">
+                     Transgender Male
+                  </label>
+   
+                  <label for="no-list">
+                  <input
+                     id="no-list"
+                     value="no-list"
+                     type="radio"
+                     name="user-gender">
+                     Not Listed
+                     <input id="no-list-entry" type="text" placeholder="Enter Your Gender">
+                  </label>
+   
+                  <label for="no-answer">
+                  <input
+                     id="no-answer"
+                     value="no-answer"
+                     type="radio"
+                     name="user-gender">
+                     Prefer Not to Answer
+                  </label>
+               </div> 
+   
+               <p>What is your preferred Chelsea Formation?</p>
+
+               <div class="formation"> 
+                  <select id="dropdown" name="formation"required>
+                     <option value="" disabled selected>Select Formation</option>
+                     <option value="4-4-2">4-4-2</option>
+                     <option value="4-3-3">4-3-3</option>
+                     <option value="4-5-1">4-5-1</option>
+                     <option value="3-5-2">3-5-2</option>
+                     <option value="3-4-3">3-4-3</option>
+                     <option value="5-3-2">5-3-2</option>
+                     <option value="5-4-1">5-4-1</option>
+                  </select>
+               </div>
+            
+               <p>Select the players for your preferred formation? <i>(Please select 11 players)</i></p>
+               
+               <div class="players">
+                   
+                <div class="player-gk">
+                  
+                    <p id="goalkeeper">Goalkeeper</p>
+     
+                    <label for="goalkeeper1" id="gk-team">
+                    <input
+                       id="goalkeeper1"
+                       name="prefer"
+                       value="em-16"
+                       type="checkbox">
+                       Edouard Mendy (16)
+                    </label>
+     
+                    <label for="goalkeeper2" id="gk-team">
+                    <input
+                       id="goalkeeper2"
+                       name="prefer"
+                       value="ka-1"
+                       type="checkbox">
+                       Kepa Arrizabalaga (1)
+                    </label>
+     
+                    <label for="goalkeeper3" id="gk-team">
+                    <input
+                       id="goalkeeper3"
+                       name="prefer"
+                       value="mb-13"
+                       type="checkbox">
+                       Marcus Bettinelli (13)
+                    </label>
+                 </div>
+     
+                 <div class="player-df">
+                    <p>Defenders</p>
+     
+                    <label for="defender1" id="df-team">
+                    <input
+                       id="defender1"
+                       name="prefer"
+                       value="ar-2"
+                       type="checkbox">
+                       Antonio Rüdiger (2)
+                    </label>
+     
+                    <label for="defender2" id="df-team">
+                    <input
+                       id="defender2"
+                       name="prefer"
+                       value="ac-4"
+                       type="checkbox">
+                       Andreas Christensen (4)
+                    </label>
+     
+                    <label for="defender3" id="df-team">
+                    <input
+                       id="defender3"
+                       name="prefer"
+                       value="tc-14"
+                       type="checkbox">
+                       Trevoh Chalobah (14)
+                    </label>
+     
+                    <label for="defender4" id="df-team">
+                    <input
+                       id="defender4"
+                       name="prefer"
+                       value="ms-31"
+                       type="checkbox">
+                       Malang Sarr (31)
+                    </label>
+     
+                    <label for="defender5" id="df-team">
+                    <input
+                       id="defender5"
+                       name="prefer"
+                       value="ts-6"
+                       type="checkbox">
+                       Thiago Silva (6)
+                    </label>
+     
+                    <label for="defender6" id="df-team">
+                    <input
+                       id="defender6"
+                       name="prefer"
+                       value="bc-21"
+                       type="checkbox">
+                       Ben Chilwell (21)
+                    </label>
+     
+                    <label for="defender7" id="df-team">
+                    <input
+                       id="defender7"
+                       name="prefer"
+                       value="ma-3"
+                       type="checkbox">
+                       Marcos Alonso (3)
+                    </label>
+     
+                    <label for="defender8" id="df-team">
+                    <input
+                       id="defender8"
+                       name="prefer"
+                       value="rj-24"
+                       type="checkbox">
+                       Reece James (24)
+                    </label>
+     
+                    <label for="defender9" id="df-team">
+                    <input
+                       id="defender9"
+                       name="prefer"
+                       value="ca-28"
+                       type="checkbox">
+                       César Azpilicueta (28)
+                    </label>
+                 </div>
+                    
+                 <div class="player-mf">
+                    <p>Central Midfielders</p>
+     
+                    <label for="center-mid1" id="mf-team">
+                    <input
+                       id="center-mid1"
+                       name="prefer"
+                       value="ng-7"
+                       type="checkbox">
+                       N'Golo Kanté (7)
+                    </label>
+     
+                    <label for="center-mid2" id="mf-team">
+                    <input
+                       id="center-mid2"
+                       name="prefer"
+                       value="jg-5"
+                       type="checkbox">
+                       Jorginho (5)
+                    </label>
+     
+                    <label for="center-mid3" id="mf-team">
+                    <input
+                       id="center-mid3"
+                       name="prefer"
+                       value="mk-8"
+                       type="checkbox">
+                       Mateo Kovacic (8)
+                    </label>
+     
+                    <label for="center-mid4" id="mf-team">
+                    <input
+                       id="center-mid4"
+                       name="prefer"
+                       value="sn-17"
+                       type="checkbox">
+                       Saúl Ñíguez (17)
+                    </label>
+     
+                    <label for="center-mid5" id="mf-team">
+                    <input
+                       id="center-mid5"
+                       name="prefer"
+                       value="rlc-12"
+                       type="checkbox">
+                       Ruben Loftus-Cheek (12)
+                    </label>
+     
+                    <label for="center-mid6" id="mf-team">
+                    <input
+                       id="center-mid6"
+                       name="prefer"
+                       value="rb-18"
+                       type="checkbox">
+                       Ross Barkley (18)
+                    </label>
+                 </div>
+     
+                 <div class="player-amf"> 
+                    <p>Attacking Midfielders</p>
+     
+                    <label for="attack-mid1" id="amf-team">
+                    <input
+                       id="attack-mid1"
+                       name="prefer"
+                       value="mm-19"
+                       type="checkbox">
+                       Mason Mount (19)
+                    </label>
+     
+                    <label for="attack-mid2" id="amf-team">
+                    <input
+                       id="attack-mid2"
+                       name="prefer"
+                       value="hz-22"
+                       type="checkbox">
+                       Hakim Ziyech (22)
+                    </label>
+     
+                    <label for="attack-mid3" id="amf-team">
+                    <input
+                       id="attack-mid3"
+                       name="prefer"
+                       value="cp-10"
+                       type="checkbox">
+                       Christian Pulisic (10)
+                    </label>
+     
+                    <label for="attack-mid4" id="amf-team">
+                    <input
+                       id="attack-mid4"
+                       name="prefer"
+                       value="cho-20"
+                       type="checkbox">
+                       Callum Hudson-Odoi (20)
+                    </label>
+                 </div>
+     
+                 <div class="player-fw">
+                    <p>Forwards</p>
+     
+                    <label for="forward1" id="fw-team">
+                    <input
+                       id="forward1"
+                       name="prefer"
+                       value="rl-9"
+                       type="checkbox">
+                       Romelu Lukaku (9)
+                    </label>
+     
+                    <label for="forward2" id="fw-team">
+                    <input
+                       id="forward2"
+                       name="prefer"
+                       value="tw-11"
+                       type="checkbox">
+                       Timo Werner (11)
+                    </label>
+     
+                    <label for="forward3" id="fw-team">
+                    <input
+                       id="forward3"
+                       name="prefer"
+                       value="kh-29"
+                       type="checkbox">
+                       Kai Havertz (29)
+                    </label>
+                 </div>
+               </div> 
+   
+               <p>What is your favorite Competition?</p>
+            
+               <div class="fav-comp">
+                <select id="dropdown" name="fav-comp"required>
+                    <option value="" disabled selected>Select Competition</option>
+                    <option value="prem-league">Premier League</option>
+                    <option value="champ-league">UEFA Champions League</option>
+                    <option value="super-cup">UEFA Super Cup</option>
+                    <option value="league-cup">Football League Cup</option>
+                    <option value="fa-cup">FA Cup</option>
+                <option value="wc-cup">World Club Cup</option>
+                 </select> 
+               </div>
+               
+   
+               <p>Which social networks do you use to keep up to date with Chelsea News? <i>(Check all that apply)</i></p>
+   
+               <div class="social">
+   
+                  <label for="social1">
+                  <input
+                     id="social1"
+                     name="prefer"
+                     value="facebook"
+                     type="checkbox">
+                     Facebook
+                  </label>
+   
+                  <label for="social2">
+                  <input
+                     id="social2"
+                     name="prefer"
+                     value="insta"
+                     type="checkbox">
+                     Instagram
+                  </label>
+   
+                  <label for="social3">
+                  <input
+                     id="social3"
+                     name="prefer"
+                     value="Google+"
+                     type="checkbox">
+                     Google+
+                  </label>
+   
+                  <label for="social4">
+                  <input
+                     id="social4"
+                     name="prefer"
+                     value="Chelsea"
+                     type="checkbox">
+                     Chelsea App
+                  </label>
+   
+                  <label for="social5">
+                  <input
+                     id="social5"
+                     name="prefer"
+                     value="twitter"
+                     type="checkbox">
+                     Twitter
+                  </label>
+   
+                  <label for="social6">
+                  <input
+                     id="social6"
+                     name="prefer"
+                     value="youtube"
+                     type="checkbox">
+                     YouTube
+                  </label>
+   
+                  <label for="social7">
+                  <input
+                     id="social7"
+                     name="prefer"
+                     value="other"
+                     type="checkbox">
+                     Other
+                  <input id="other-social" type="text" placeholder="Please Specify">
+                  </label>
+            
+               </div>
+   
+               <p>Which players should Chelsea sign in the next Transfer Window?</p>
+   
+               <div class="comments">
+                  <textarea
+                     rows="7" 
+                     cols="50" 
+                     placeholder="Enter your comments here..."></textarea>
+               </div>      
+              
+               <button type="submit" id="submit" formtarget="_blank">
+                  Submit
+               </button>
+               
+        </form>
+      </div>   
+  </body>
+</html>

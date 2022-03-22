@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+:root {
+  font-size: 1rem;
+  /* font-weight: 500; */
+  font-family: rubik, sans-serif;
+  --primary: rgba(5, 117, 230, 0.6);
+  --secondary: rgba(2, 28, 121, 0.7);
+  box-sizing: border-box;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+body {
+    background-image: linear-gradient(
+    145deg, 
+    var(--primary), 
+    var(--secondary)),
+  url(chelsea_back.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*****************************************
+CSS below follows flow of HTML source code
+*****************************************/
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    color: #fff;
+    
+}
+
+#survey-form {
+    padding: 25px;
+    background-color: rgba(27, 27, 50, 0.65);
+    border-radius: 0.80rem;  
+}
+
+@media (max-width: 600px) {
+    #survey-form {
+        margin: 0px 10px;
+    }
+}
+
+.header { 
+    text-align: center;
+    margin: 25px 0px;
+    
+}
+
+.name-email-age {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px; 
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.name-email-age > input {
+    border: none;
+    box-shadow:0 0 15px 4px rgba(18, 18, 36, 0.45);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+
+}
+
+#survey-form > p {
+    margin-top: 40px;
+    
+}
+
+div + p {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.form-gender {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+
+#no-list-entry {
+    padding: 6px;
+    margin-left: 10px;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(18, 18, 36, 0.45);
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+} 
+
+#no-list-entry:focus {
+    width: 200px;
+}
+
+#dropdown {
+    padding: 6px;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(18, 18, 36, 0.45);
+    border-radius: 5px;
+    /* font-weight: 20;	 */
+    }
+
+#other-social {
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(18, 18, 36, 0.45);
+    border-radius: 5px;
+    padding: 6px;
+    transition: width 0.4s ease-in-out;
+}
+
+#other-social:focus {
+    width: 200px;
+}
+
+i {
+    font-size: 0.85rem;
+}
+
+.players > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;  
+}
+
+.players > div > p {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+#goalkeeper {
+    margin-top: 0px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+
+#other-social {
+    margin-left: 5px;
+}
+
+.comments {
+    display: block;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:0 0 15px 4px rgba(18, 18, 36, 0.45);
+}
+
+textarea {
+    width: 100%; 
+    margin: 0px; 
+    padding: 0px; 
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+    color: gray;
+    text-indent: 10px;
+    border: 0;
+    border-radius: 5px;
+    outline: none; 
+}
+
+button {
+    margin-top: 40px;
+    width: 100%;
+    height: 2rem;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(18, 18, 36, 0.45);
+    border-radius: 5px;
+}
